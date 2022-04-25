@@ -11,6 +11,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/blog">
             <a>Blog</a>
           </Link>
+          <Link href="/projects">
+            <a>Projects</a>
+          </Link>
           <Link href="/about">
             <a>About</a>
           </Link>
