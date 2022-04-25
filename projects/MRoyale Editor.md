@@ -13,5 +13,5 @@ tags:
 An offline editor for the webgame MRoyale. Now archived, it was originally made because of bad internet. It may not work with current versions of the game.
 
 <a href="https://github.com/ERmilburn02/mroyale-editor">
-<img src="https://opengraph.githubassets.com/786749ca83f9078a07449ac8e9910a13b6cd2a762a23de5c94370a859617eaba/ERmilburn02/mroyale-editor"></img>
+<img src="https://opengraph.githubassets.com/786749ca83f9078a07449ac8e9910a13b6cd2a762a23de5c94370a859617eaba/ERmilburn02/mroyale-editor" width=540></img>
 </a>
