@@ -1,0 +1,2 @@
+- [ ] Create a Personal Access Token for deployment
+- [ ] Fix image loading for exports
