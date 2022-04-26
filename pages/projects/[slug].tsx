@@ -38,7 +38,7 @@ export default function ProjectPage({
   content: string;
 }) {
   return (
-    <div className="prose mx-auto">
+    <div className="prose mx-auto text-center">
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{__html: md({html: true, xhtmlOut: true}).render(content)}} />
     </div>

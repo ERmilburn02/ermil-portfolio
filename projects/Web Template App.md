@@ -8,7 +8,7 @@ tags:
   - web
 ---
 
-![Web Template App Thumbnail](/images/e-s.io-ts-w-app-thumbnail.png)
+<img src="/images/e-s.io-ts-w-app-thumbnail.png" class="w-5/6 mx-auto">
 
 This was a template to make a web app. I made it as I was making a lot of projects at the time using the same basic system.
 

@@ -9,11 +9,13 @@ tags:
   - Unity
 ---
 
-![Passcode Decrypt Thumbnail](/images/passcode-decrypt-thumbnail.png)
+<img src="/images/passcode-decrypt-thumbnail.png" class="w-5/6 mx-auto">
 
 This was a quick project I made, it is a partial recreation of a Club Penguin Minigame.
 
 Footage of the original game from YouTube:
-<iframe width="540" height="304" src="https://www.youtube-nocookie.com/embed/OdyaeAsfjqw?&rel=0&start=43&end=76&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-5/6 mx-auto" src="https://www.youtube-nocookie.com/embed/OdyaeAsfjqw?&rel=0&start=43&end=76&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
 
-<iframe frameborder="0" src="https://itch.io/embed/964952?linkback=true" width="540" height="167"><a href="https://ermilburn02.itch.io/passcodedecrypt">Passcode Decrypt by ERmilburn02</a></iframe>
+Download:
+
+<iframe class="w-5/6 mx-auto" frameborder="0" src="https://itch.io/embed/964952"><a href="https://ermilburn02.itch.io/passcodedecrypt">Passcode Decrypt by ERmilburn02</a></iframe>

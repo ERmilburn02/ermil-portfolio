@@ -31,7 +31,7 @@ export default function Blog({
           key={slug}
           className="border border-gray-200 m-2 rounded-x1 shadow-lg overflow-hidden flex flex-col"
         >
-          <Link href={`/blog/post/${slug}`}>
+          <Link href={`/blog/${slug}`}>
             <a>
               <Image
                 width={650}

@@ -10,8 +10,8 @@ tags:
   - C++
 ---
 
-![Flappy Thumbnail](/images/flappy-thumbnail.png)
+<img src="/images/flappy-thumbnail.png" class="w-5/6 mx-auto">
 
 This project was a simple clone of Flappy Bird, made using C++ and Raylib.
 
-<iframe frameborder="0" src="https://itch.io/embed/1499797?linkback=true" width="540" height="167"><a href="https://ermilburn02.itch.io/flappy-bird">Flappy Bird by ERmilburn02</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/1499797" class="w-5/6 mx-auto"><a href="https://ermilburn02.itch.io/flappy-bird">Flappy Bird by ERmilburn02</a></iframe>
