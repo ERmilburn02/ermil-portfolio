@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                     />
           <div className="flex justify-center mt-6">
             <div
-              className="flex md:flex lg:flex sm:flex space-x-4 font-medium text-gray-800 sm:block">
+              className="flex md:flex lg:flex sm:flex space-x-4 font-medium text-gray-800">
               <a className="transition-colors hover:text-sky-500" target="_blank" rel="noreferrer"
                 href="https://twitter.com/ERmilburn02">
                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512"
