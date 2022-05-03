@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+// import Image from "next/image";
+import CustomImage from "../components/customImage";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -40,7 +41,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-          <Image
+          <CustomImage
                         src="/images/profile.jpg"
                         alt="Profile"
                         priority={true}
