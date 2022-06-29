@@ -1,2 +1,3 @@
-- [ ] Create a Personal Access Token for deployment
-- [ ] Fix image loading for exports
+- [X] Create a Personal Access Token for deployment
+- [X] Fix image loading for exports
+- [ ] [next-pwa](https://github.com/shadowwalker/next-pwa)
