@@ -2,13 +2,13 @@
 title: 'MRoyale Editor'
 metaTitle: 'MRoyale Editor'
 metaDesc: 'MRoyale offline editor'
-socialImage: images/mroyale-editor-thumbnail.png
+socialImage: images/thumbnails/mroyale-editor-thumbnail.png
 date: '24-04-2022'
 tags:
   - game
 ---
 
-<img src="/images/mroyale-editor-thumbnail.png" class="w-5/6 mx-auto">
+<img src="/images/thumbnails/mroyale-editor-thumbnail.png" class="w-5/6 mx-auto">
 
 An offline editor for the webgame MRoyale. Now archived, it was originally made because of bad internet.
 

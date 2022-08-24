@@ -2,7 +2,7 @@
 title: 'Gliding Bird'
 metaTitle: 'Gliding Bird'
 metaDesc: 'Gliding Bird (raylib)'
-socialImage: images/gliding-thumbnail.png
+socialImage: images/thumbnails/gliding-thumbnail.png
 date: '24-04-2022'
 tags:
   - game
@@ -10,7 +10,7 @@ tags:
   - C++
 ---
 
-<img src="/images/gliding-thumbnail.png" class="w-5/6 mx-auto">
+<img src="/images/thumbnails/gliding-thumbnail.png" class="w-5/6 mx-auto">
 
 This project was a simple clone of Gliding Bird, made using C++ and Raylib.
 

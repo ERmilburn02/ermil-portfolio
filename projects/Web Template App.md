@@ -2,13 +2,13 @@
 title: 'Web Template App'
 metaTitle: 'Web Template App'
 metaDesc: 'Basic framework for a Node.JS app using Express, Socket.IO, and Webpack, coded in Typescript'
-socialImage: images/e-s.io-ts-w-app-thumbnail.png
+socialImage: images/thumbnails/e-s.io-ts-w-app-thumbnail.png
 date: '24-04-2022'
 tags:
   - web
 ---
 
-<img src="/images/e-s.io-ts-w-app-thumbnail.png" class="w-5/6 mx-auto">
+<img src="/images/thumbnails/e-s.io-ts-w-app-thumbnail.png" class="w-5/6 mx-auto">
 
 This was a template to make a web app. I made it as I was making a lot of projects at the time using the same basic system.
 

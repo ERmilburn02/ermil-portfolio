@@ -2,7 +2,7 @@
 title: 'Welcome'
 metaTitle: 'Welcome'
 metaDesc: 'Welcome to the blog!'
-socialImage: images/gliding-thumbnail.png
+socialImage: images/thumbnails/gliding-thumbnail.png
 date: '25-04-2022'
 tags:
   - welcome

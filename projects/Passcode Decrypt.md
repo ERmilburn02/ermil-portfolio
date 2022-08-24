@@ -2,14 +2,14 @@
 title: 'Passcode Decrypt'
 metaTitle: 'Passcode Decrypt'
 metaDesc: 'Recreation of a Club Penguin Minigame'
-socialImage: images/passcode-decrypt-thumbnail.png
+socialImage: images/thumbnails/passcode-decrypt-thumbnail.png
 date: '24-04-2022'
 tags:
   - game
   - Unity
 ---
 
-<img src="/images/passcode-decrypt-thumbnail.png" class="w-5/6 mx-auto">
+<img src="/images/thumbnails/passcode-decrypt-thumbnail.png" class="w-5/6 mx-auto">
 
 This was a quick project I made, it is a partial recreation of a Club Penguin Minigame.
 
