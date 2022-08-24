@@ -27,10 +27,8 @@ One part I struggled with was the art. I took a break halfway through, and then 
 
 Later that day, I was able to get a streamer to try out the game and give feedback. This is what he had to say...
 
-VIDEO UPLOAD PENDING, CHECK BACK LATER
-
-<!-- <iframe class="w-5/6 mx-auto" src="https://www.youtube-nocookie.com/embed/VIDEO_ID?&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe> -->
+<iframe class="w-5/6 mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/UNhlMHoadiw?&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
 
 If you would like to give the game a try, it's linked below.
 
-<iframe class="w-5/6 mx-auto" frameborder="0" src="https://itch.io/embed/1651438"><a href="https://ermilburn02.itch.io/dream-clicker">Dream Clicker by ERmilburn02</a></iframe>
+<iframe class="w-5/6 mx-auto" frameborder="0" src="https://itch.io/embed/1651438?border_width=0"><a href="https://ermilburn02.itch.io/dream-clicker">Dream Clicker by ERmilburn02</a></iframe>

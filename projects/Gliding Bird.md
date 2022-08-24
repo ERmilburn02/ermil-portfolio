@@ -14,4 +14,4 @@ tags:
 
 This project was a simple clone of Gliding Bird, made using C++ and Raylib.
 
-<iframe frameborder="0" src="https://itch.io/embed/1499797" class="w-5/6 mx-auto"><a href="https://ermilburn02.itch.io/flappy-bird">Gliding Bird by ERmilburn02</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/1499797?border_width=0" class="w-5/6 mx-auto"><a href="https://ermilburn02.itch.io/flappy-bird">Gliding Bird by ERmilburn02</a></iframe>
