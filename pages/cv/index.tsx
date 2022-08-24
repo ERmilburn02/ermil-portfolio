@@ -10,7 +10,7 @@ const CVpage: NextPage = () => {
             {/* Education */}
             <div className="container">
                 <h3 className="text-4xl font-semibold lg:text-5xl pb-3">Education</h3>
-                <h6 className="text-2xl lg:text-4xl py-1">DV8 Sussex (March 2020 - Present)</h6>
+                <h6 className="text-2xl lg:text-4xl py-1">DV8 Sussex (March 2020 - June 2022)</h6>
                 <p className="lg:text-2xl">RSL Creative Digital Media (Games Design) Level 3 Extended Diploma</p>
                 <p className="lg:text-2xl">RSL Creative Digital Media (Games Design) Level 2 Extended Certificate</p>
                 <h6 className="text-2xl lg:text-4xl py-1">St. Philip Howard Catholic School (January 2015 - June 2018)</h6>
