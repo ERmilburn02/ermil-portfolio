@@ -11,6 +11,7 @@ export async function getStaticProps() {
     .forEach((file) => {
       fileContent += `# ${file}\n`;
       fileContent += fs.readFileSync(`changelog/${file}.md`, "utf-8");
+      fileContent += "\n";
     });
 
   return {
