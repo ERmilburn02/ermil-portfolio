@@ -13,7 +13,7 @@ tags:
 
 <img src="/images/thumbnails/dream-clicker-thumbnail.png" class="w-5/6 mx-auto"></img>
 
-I often stream game development on [my Twitch channel](https://ermil.me/twitch), and for one stream, I decided to create an entire game during the stream. This game was the result of that stream. It was built in Unity, as I needed an engine I was confident in due to the limited time.
+I often stream game development on <a href="https://ermil.me/twitch" target="_blank">my Twitch channel</a>, and for one stream, I decided to create an entire game during the stream. This game was the result of that stream. It was built in Unity, as I needed an engine I was confident in due to the limited time.
 
 The game had a theme of dreams, and for a while, I didn't know what to create. During this time, I had the idea to create a clicker game, as it was simple and I was reasonably confident I could finish it during the time limit.
 
@@ -27,7 +27,7 @@ One part I struggled with was the art. I took a break halfway through, and then 
 
 Later that day, I was able to get a streamer to try out the game and give feedback. This is what he had to say...
 
-<iframe class="w-5/6 mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/UNhlMHoadiw?&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-5/6 mx-auto" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/UNhlMHoadiw?&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
 
 If you would like to give the game a try, it's linked below.
 
