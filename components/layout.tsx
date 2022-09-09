@@ -14,6 +14,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/projects">
             <a>Projects</a>
           </Link>
+          <Link href="/changelog">
+            <a>Changelog</a>
+          </Link>
         </div>
       </header>
       <main className="container mx-auto flex-1">{children}</main>
