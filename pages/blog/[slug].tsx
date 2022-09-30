@@ -68,7 +68,7 @@ export default function PostPage({
         <meta name="og:site_name" content="ERmilburn02" />
         <meta property="og:site_name" content="ERmilburn02" />
       </Head>
-      <div className="prose mx-auto text-center">
+      <div className="prose dark:prose-invert mx-auto text-center">
         <h1>{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </div>

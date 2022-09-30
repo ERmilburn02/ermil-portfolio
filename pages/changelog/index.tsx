@@ -25,7 +25,7 @@ export default function Changelog({ fileContent }: { fileContent: string }) {
   return (
     <div className="mx-auto text-center">
       <h1 className="text-5xl lg:text-7xl mb-10 font-bold">Changelog</h1>
-      <div className="prose mx-auto text-center lg:prose-lg">
+      <div className="prose dark:prose-invert mx-auto text-center lg:prose-lg">
         <div
           dangerouslySetInnerHTML={{
             __html: md({ html: true, xhtmlOut: true }).render(fileContent),
