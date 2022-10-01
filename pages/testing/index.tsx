@@ -17,7 +17,7 @@
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import useDarkMode from "../../hooks/useDarkMode";
 
-export default function testing() {
+export default function Testing() {
   const [darkTheme, setDarkTheme] = useDarkMode();
 
   // return <Unity unityContext={unityContext} className="w-5/6 mx-auto" />;
