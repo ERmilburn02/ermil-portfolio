@@ -36,7 +36,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: ERmilburn02/ERmilburn02.github.io
+          external_repository: ERmilburn02/ermilburn02.com
           cname: ermilburn02.com
           publish_dir: ./out
           user_name: "github-actions[bot]"
