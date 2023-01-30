@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import isBrowserDarkTheme from "../utils/isBrowserDarkTheme";
 import useLocalStorage from "./useLocalStorage";
 
 const useDarkMode = () => {
-  const [enabled, setEnabled] = useLocalStorage("dark-theme", false);
+  const [enabled, setEnabled] = useLocalStorage(
+    "dark-theme",
+    isBrowserDarkTheme()
+  );
   const isEnabled = enabled;
 
   useEffect(() => {
