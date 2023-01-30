@@ -32,7 +32,7 @@ export default function Blog({
           key={slug}
           className="border border-gray-200 m-2 rounded-x1 shadow-lg overflow-hidden flex flex-col"
         >
-          <Link href={`/blog/${slug}`}>
+          <Link legacyBehavior href={`/blog/${slug}`}>
             <a>
               <CustomImage
                 width={650}

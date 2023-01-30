@@ -18,7 +18,7 @@ const Home: NextPage = () => {
             <p className="mb-4">
               I&apos;ve been developing games, programs, and websites for many
               years, and have made many projects. See{" "}
-              <Link href="/projects">
+              <Link legacyBehavior href="/projects">
                 <a className="font-bold transition-colors hover:text-sky-500">
                   projects page
                 </a>
