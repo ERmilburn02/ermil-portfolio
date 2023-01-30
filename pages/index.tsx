@@ -50,14 +50,16 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-          <Image
-            src="/images/profile.jpg"
-            alt="Profile"
-            priority={true}
-            className="rounded-full"
-            width={250}
-            height={250}
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/images/profile.jpg"
+              alt="Profile"
+              priority={true}
+              className="rounded-full"
+              width={250}
+              height={250}
+            />
+          </div>
           <div className="flex justify-center mt-6">
             <div className="flex md:flex lg:flex sm:flex space-x-4 font-medium text-gray-800 dark:text-gray-100">
               <Link
