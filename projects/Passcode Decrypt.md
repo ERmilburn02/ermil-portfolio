@@ -14,7 +14,7 @@ tags:
 This was a quick project I made, it is a partial recreation of a Club Penguin Minigame.
 
 Footage of the original game from YouTube:
-<iframe class="w-5/6 mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/OdyaeAsfjqw?&rel=0&start=43&end=76&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-5/6 mx-auto" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/OdyaeAsfjqw?&rel=0&start=43&end=76&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
 
 Download:
 
