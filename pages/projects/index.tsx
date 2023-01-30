@@ -31,16 +31,14 @@ export default function Projects({
           key={slug}
           className="border border-gray-200 m-2 rounded-x1 shadow-lg overflow-hidden flex flex-col"
         >
-          <Link legacyBehavior href={`/projects/${slug}`}>
-            <a>
-              <Image
-                width={650}
-                height={340}
-                alt={frontmatter.title}
-                src={`/${frontmatter.socialImage}`}
-              />
-              <h1 className="p-4">{frontmatter.title}</h1>
-            </a>
+          <Link href={`/projects/${slug}`}>
+            <Image
+              width={650}
+              height={340}
+              alt={frontmatter.title}
+              src={`/${frontmatter.socialImage}`}
+            />
+            <h1 className="p-4">{frontmatter.title}</h1>
           </Link>
         </div>
       ))}

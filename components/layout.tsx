@@ -8,18 +8,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col min-h-screen bg-white dark:bg-neutral-900 text-black dark:text-white">
       <header className="bg-fuchsia-100 dark:bg-purple-900 text-black dark:text-white mb-8 py-4">
         <div className="container mx-auto flex justify-evenly">
-          <Link legacyBehavior href="/">
-            <a>Home</a>
-          </Link>
-          <Link legacyBehavior href="/blog">
-            <a>Blog</a>
-          </Link>
-          <Link legacyBehavior href="/projects">
-            <a>Projects</a>
-          </Link>
-          <Link legacyBehavior href="/changelog">
-            <a>Changelog</a>
-          </Link>
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/changelog">Changelog</Link>
           <button onClick={handleMode}>
             <a>Toggle theme</a>
           </button>
