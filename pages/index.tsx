@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                 className="transition-colors hover:text-sky-500"
                 target="_blank"
                 rel="noreferrer"
-                href="https://twitter.com/ERmilburn02"
+                href="/api/redirect/twitter"
               >
                 <svg
                   stroke="currentColor"
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                 className="transition-colors hover:text-sky-500"
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.linkedin.com/in/dean-milburn-0796b2214/"
+                href="/api/redirect/linkedin"
               >
                 <svg
                   stroke="currentColor"
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
                 className="transition-colors hover:text-sky-500"
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/ERmilburn02"
+                href="/api/redirect/github"
               >
                 <svg
                   stroke="currentColor"
