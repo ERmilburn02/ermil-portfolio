@@ -1,6 +1,5 @@
 import fs from "fs";
-// import Image from "next/image";
-import CustomImage from "../../components/customImage";
+import Image from "next/image";
 import Link from "next/link";
 import matter from "gray-matter";
 
@@ -34,7 +33,7 @@ export default function Projects({
         >
           <Link legacyBehavior href={`/projects/${slug}`}>
             <a>
-              <CustomImage
+              <Image
                 width={650}
                 height={340}
                 alt={frontmatter.title}
