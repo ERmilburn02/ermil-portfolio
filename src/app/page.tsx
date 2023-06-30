@@ -7,7 +7,7 @@ export default function Home() {
             Website is being rewritten
           </h1>
           <p className="mx-16">
-            If you're found this page, welcome. This is the rewrite of my
+            If you&apos;re found this page, welcome. This is the rewrite of my
             website. It is currently incomplete, but I will be working to re-add
             all of the old functionality as fast as I can. Thank you for your
             patience.
