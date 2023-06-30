@@ -1,3 +1,5 @@
+import MarkdownPost from "@/components/MarkdownPost";
+
 export default function IndividualProjectPage({
   params,
 }: {
@@ -5,7 +7,7 @@ export default function IndividualProjectPage({
 }) {
   return (
     <>
-      <>{params.slug}</>
+      <MarkdownPost />
     </>
   );
 }
