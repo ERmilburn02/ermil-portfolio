@@ -7,3 +7,9 @@ body {
   height: 100%;
   width: 100%;
 }
+
+@layer components {
+  .title-main {
+    @apply font-bold lg:text-5xl text-2xl mb-2;
+  }
+}
