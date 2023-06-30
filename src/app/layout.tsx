@@ -15,6 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "ERmilburn02",
   description: "Personal website of ERmilburn02",
+  authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
 };
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex lg:flex-row flex-col h-full">
           <NavBar />
-          <main className="flex-1 h-auto lg:h-full bg-gray-100 dark:bg-gray-700">
+          <main className="flex-1 h-auto lg:h-full bg-gray-100 dark:bg-gray-700 text-black dark:text-white">
             {children}
           </main>
         </div>
