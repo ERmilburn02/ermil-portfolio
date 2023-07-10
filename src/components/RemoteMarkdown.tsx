@@ -5,7 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 // For now, we only allow the Next Link component
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 
-export default async function MarkdownComponent({ md }: { md: string }) {
+export default async function RemoteMarkdownComponent({ md }: { md: string }) {
   const components: React.ComponentProps<typeof MDXProvider>["components"] = {
     Link: (props: NextLinkProps) => <NextLink {...props} />,
   };
