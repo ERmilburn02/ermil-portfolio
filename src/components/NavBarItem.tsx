@@ -28,7 +28,7 @@ export default function NavBarItem({
         >
           <FontAwesomeIcon
             icon={icon}
-            className="w-6 h-6 text-gray-600 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
           />
           <span className="ml-3 lg:block hidden lg:text-lg">{name}</span>
         </Link>
