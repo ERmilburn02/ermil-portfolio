@@ -1,4 +1,15 @@
 import "./globals.css";
+
+// Components
+import NavBar from "@/components/NavBar";
+
+// Font Awesome
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+// Font
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -17,7 +28,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex lg:flex-row flex-col h-full">
+          <NavBar />
+          <main className="flex-1 h-auto lg:h-full bg-gray-100 dark:bg-gray-700 text-black dark:text-white">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
