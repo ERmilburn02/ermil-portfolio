@@ -14,6 +14,7 @@ export default function ProjectsPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
         {/* TODO: Fill these in with dynamic data */}
+        {/* TODO: Move this to it's own component */}
         <ProjectPreview name="DEBUG 1" image="" />
         <ProjectPreview name="DEBUG 2" image="" />
         <ProjectPreview name="DEBUG 3" image="" />
