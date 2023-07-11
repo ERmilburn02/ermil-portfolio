@@ -9,17 +9,19 @@ export default function NavBarItem({
   icon,
   link,
   external,
+  grow,
 }: {
   name: string;
   icon: IconDefinition;
   link: Url;
   external?: boolean;
+  grow?: boolean;
 }) {
   const target = external ? "_blank" : undefined;
 
   return (
     <>
-      <li>
+      <li className={grow ? "lg:grow" : ""}>
         <Link
           href={link}
           target={target}
