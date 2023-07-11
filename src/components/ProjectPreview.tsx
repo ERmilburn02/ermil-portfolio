@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Url } from "@/types";
-
-// TODO: Replace images with Supabase
+import { Database, Url } from "@/types";
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
 
 export default function ProjectPreview({
   name,
@@ -12,7 +12,13 @@ export default function ProjectPreview({
   name: string;
   image: Url;
 }) {
-  if (image == "") image = "images/placeholder.jpg";
+  const supabase = createServerComponentClient<Database>({ cookies });
+
+  if (image == "") image = "placeholder.jpg";
+
+  const imageUrl = supabase.storage
+    .from("portfolio-public-data")
+    .getPublicUrl(`images/${image}`).data.publicUrl;
 
   return (
     <>
@@ -24,7 +30,7 @@ export default function ProjectPreview({
         <div className="relative w-full h-40">
           <Image
             alt={name}
-            src={`/${image}`}
+            src={imageUrl}
             fill
             style={{ objectFit: "cover" }}
           />
