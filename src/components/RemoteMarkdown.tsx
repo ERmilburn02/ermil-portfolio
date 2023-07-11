@@ -12,7 +12,9 @@ export default async function RemoteMarkdownComponent({ md }: { md: string }) {
 
   return (
     <>
-      <MDXRemote source={md} components={components} />
+      <div className="prose dark:prose-invert mx-auto text-center">
+        <MDXRemote source={md} components={components} />
+      </div>
     </>
   );
 }

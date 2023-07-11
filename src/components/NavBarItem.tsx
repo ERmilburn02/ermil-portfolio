@@ -2,8 +2,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-import { UrlObject } from "url";
-type Url = string | UrlObject;
+import { Url } from "@/types";
 
 export default function NavBarItem({
   name,

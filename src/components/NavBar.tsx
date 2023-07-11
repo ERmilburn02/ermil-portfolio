@@ -1,4 +1,4 @@
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faScroll } from "@fortawesome/free-solid-svg-icons";
 import NavBarItem from "./NavBarItem";
 
 export default function NavBar() {
@@ -8,6 +8,7 @@ export default function NavBar() {
         <div className="w-full py-2 lg:w-auto lg:h-full lg:overflow-y-auto lg:py-4 px-3 bg-gray-50 dark:bg-gray-800">
           <ul className="flex flex-row lg:[display:initial;] lg:[flex-direction:unset;] mb-2 justify-around">
             <NavBarItem name="Home" link="/" icon={faHouse} />
+            <NavBarItem name="Projects" link="/projects" icon={faScroll} />
           </ul>
         </div>
       </aside>
