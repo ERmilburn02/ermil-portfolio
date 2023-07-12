@@ -3,6 +3,7 @@ import NavBarItem from "./NavBarItem";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { Database } from "@/types";
 import { cookies } from "next/headers";
+import NavBarLogoutButton from "./NavBarLogoutButton";
 
 export default async function NavBar() {
   const supabase = createServerComponentClient<Database>({ cookies });
@@ -18,6 +19,7 @@ export default async function NavBar() {
             <NavBarItem name="Home" link="/" icon={faHouse} />
             <NavBarItem name="Projects" link="/projects" icon={faScroll} grow />
             <NavBarItem name="Admin" link="/admin" icon={faUser} />
+            {session && <NavBarLogoutButton />}
           </ul>
         </div>
       </aside>
