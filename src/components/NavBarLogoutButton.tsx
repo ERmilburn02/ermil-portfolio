@@ -16,6 +16,7 @@ export default function NavBarLogoutButton() {
     await supabase.auth.signOut();
 
     router.refresh();
+    router.push("/");
   };
 
   return (
