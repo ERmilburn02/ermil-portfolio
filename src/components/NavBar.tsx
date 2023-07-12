@@ -13,9 +13,12 @@ export default async function NavBar() {
 
   return (
     <>
-      <aside className="lg:w-60 lg:h-full h-16 w-full" aria-label="Sidebar">
-        <div className="w-full py-2 lg:w-auto lg:h-full lg:overflow-y-auto lg:py-4 px-3 bg-gray-50 dark:bg-gray-800">
-          <ul className="flex flex-row lg:flex-col mb-2 lg:mb-0 justify-around lg:justify-start h-full">
+      <aside
+        className="lg:w-60 lg:h-full h-16 w-full bg-gray-50 dark:bg-gray-800"
+        aria-label="Sidebar"
+      >
+        <div className="w-full py-2 lg:w-auto lg:h-full lg:overflow-y-auto lg:py-4 px-3">
+          <ul className="flex flex-row lg:flex-col justify-evenly lg:justify-start h-full">
             <NavBarItem name="Home" link="/" icon={faHouse} />
             <NavBarItem name="Projects" link="/projects" icon={faScroll} grow />
             <NavBarItem name="Admin" link="/admin" icon={faUser} />
