@@ -1,4 +1,4 @@
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faGear, faHouse, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AdminNavItemComponent from "./AdminNavItem";
 
 export default function AdminNavComponent() {
@@ -11,9 +11,14 @@ export default function AdminNavComponent() {
         <div className="w-full py-2 px-3">
           <ul className="flex flex-row mb-2 justify-evenly h-full">
             <AdminNavItemComponent
-              name="TODO: Add stuff"
-              icon={faPlus}
-              link="#"
+              name="Admin Home"
+              icon={faHouse}
+              link="/admin"
+            />
+            <AdminNavItemComponent
+              name="Settings"
+              icon={faGear}
+              link="/admin/settings"
             />
           </ul>
         </div>
