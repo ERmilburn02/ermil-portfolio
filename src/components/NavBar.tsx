@@ -3,7 +3,7 @@ import NavBarItem from "./NavBarItem";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { Database } from "@/types";
 import { cookies } from "next/headers";
-import NavBarLogoutButton from "./NavBarLogoutButton";
+import NavBarLogoutButton from "./admin/NavBarLogoutButton";
 
 export default async function NavBar() {
   const supabase = createServerComponentClient<Database>({ cookies });

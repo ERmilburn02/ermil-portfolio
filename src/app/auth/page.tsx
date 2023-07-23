@@ -1,4 +1,4 @@
-import LoginComponent from "@/components/Login";
+import LoginComponent from "@/components/admin/Login";
 import checkAuth from "@/lib/checkAuth";
 import { Database } from "@/types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
