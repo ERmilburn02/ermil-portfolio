@@ -21,6 +21,16 @@ export default function Login() {
     router.refresh();
   };
 
+  const handleReset = async () => {
+    const origin = location.origin;
+
+    await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${origin}/auth/callback?next=/admin/settings`,
+    });
+
+    router.refresh();
+  };
+
   return (
     <>
       <div className="flex flex-col">
@@ -40,10 +50,14 @@ export default function Login() {
           className="text-black border"
           placeholder="Password"
         />
-        {/* <button onClick={handleSignUp}>Sign up</button> */}
-        <button onClick={handleSignIn} className="border">
-          Sign in
-        </button>
+        <div className="flex flex-row justify-evenly mt-2">
+          <button onClick={handleSignIn} className="border">
+            Sign in
+          </button>
+          <button onClick={handleReset} className="border">
+            Reset Password
+          </button>
+        </div>
       </div>
     </>
   );
