@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
 };
 
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({
   children,
 }: {
