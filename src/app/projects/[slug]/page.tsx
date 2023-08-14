@@ -52,7 +52,7 @@ export default async function IndividualProjectPage({
       <>
         <div className="my-4">
           <h1 className="font-bold lg:text-5xl text-2xl">
-            There's nothing here...
+            There&apos;s nothing here...
           </h1>
         </div>
       </>

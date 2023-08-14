@@ -60,6 +60,7 @@ export default async function ProjectsPage() {
               name={project.post_title}
               link={project.id}
               image={project.post_image_link}
+              key={project.id}
             />
           ))}
         </div>
