@@ -1,6 +1,8 @@
 import { UrlObject } from "url";
 export type Url = string | UrlObject;
 
+/* SUPABASE_TYPES_START */
+
 export type Json =
   | string
   | number
@@ -12,7 +14,33 @@ export type Json =
 export interface Database {
   public: {
     Tables: {
-      [_ in never]: never;
+      projects: {
+        Row: {
+          created_at: string;
+          id: string;
+          is_public: boolean;
+          post_content_link: string;
+          post_image_link: string;
+          post_title: string;
+        };
+        Insert: {
+          created_at?: string;
+          id?: string;
+          is_public?: boolean;
+          post_content_link?: string;
+          post_image_link?: string;
+          post_title?: string;
+        };
+        Update: {
+          created_at?: string;
+          id?: string;
+          is_public?: boolean;
+          post_content_link?: string;
+          post_image_link?: string;
+          post_title?: string;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
@@ -28,3 +56,5 @@ export interface Database {
     };
   };
 }
+
+/* SUPABASE_TYPES_END */

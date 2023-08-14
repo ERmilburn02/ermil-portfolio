@@ -5,12 +5,16 @@ import { Database, Url } from "@/types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
+// TODO: Add marker if it's a hidden post
+
 export default function ProjectPreview({
   name,
   image,
+  link,
 }: {
   name: string;
   image: Url;
+  link: Url;
 }) {
   const supabase = createServerComponentClient<Database>({ cookies });
 
@@ -23,7 +27,7 @@ export default function ProjectPreview({
   return (
     <>
       <Link
-        href={`/projects/${name}`}
+        href={`/projects/${link}`}
         key={name}
         className="border my-4 border-gray-200 dark:border-gray-800 m-2 rounded-2xl shadow-lg overflow-hidden flex flex-col text-gray-500 duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white text-start hover:-translate-y-3 transition-transform hover:cursor-pointer"
       >
