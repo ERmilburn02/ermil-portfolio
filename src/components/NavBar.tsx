@@ -14,7 +14,7 @@ export default async function NavBar() {
   return (
     <>
       <aside
-        className="lg:w-60 lg:h-full h-16 w-full bg-gray-50 dark:bg-gray-800"
+        className="lg:w-60 lg:h-full h-16 w-full bg-gray-800"
         aria-label="Sidebar"
       >
         <div className="w-full py-2 lg:w-auto lg:h-full lg:overflow-y-auto lg:py-4 px-3">
