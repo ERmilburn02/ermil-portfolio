@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
         <div className="lg:px-4 lg:mt-12 ">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-200 lg:text-5xl pb-2">
-            Website is currently being updated. Because of this, some project pages might be unavailable. I am working to resolve the issues ASAP.
+            Website is currently being updated. Because of this, some project pages might be unavailable. See the <Link href="https://ermil.me/beta-portfolio" target="_blank" rel="noreferrer" className="font-bold transition-colors hover:text-sky-500">Beta Portfolio</Link> for a more updated experience.
           </h1>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-200 lg:text-5xl">
             Hi there!
