@@ -6,12 +6,18 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import MarkdownImage, { MarkdownImageProps } from "./markdown/MarkdownImage";
 import MarkdownIframe, { MarkdownIframeProps } from "./markdown/MarkdownIframe";
+import MarkdownYouTube, {
+  MarkdownYouTubeProps,
+} from "./markdown/MarkdownYouTube";
+import MarkdownItchio, { MarkdownItchioProps } from "./markdown/MarkdownItchio";
 
 export default async function RemoteMarkdownComponent({ md }: { md: string }) {
   const components: React.ComponentProps<typeof MDXProvider>["components"] = {
     Link: (props: NextLinkProps) => <NextLink {...props} />,
     Image: (props: MarkdownImageProps) => <MarkdownImage {...props} />,
     Iframe: (props: MarkdownIframeProps) => <MarkdownIframe {...props} />,
+    YouTube: (props: MarkdownYouTubeProps) => <MarkdownYouTube {...props} />,
+    Itchio: (props: MarkdownItchioProps) => <MarkdownItchio {...props} />,
   };
 
   return (

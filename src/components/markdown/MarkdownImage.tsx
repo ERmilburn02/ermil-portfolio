@@ -10,12 +10,14 @@ export type MarkdownImageProps = {
   src: string;
   quality: number;
   contain: boolean;
+  priority: boolean;
 };
 
 export default function MarkdownImage({
   src,
   quality = 75,
   contain = false,
+  priority = false,
 }: MarkdownImageProps) {
   const supabase = createServerComponentClient<Database>({ cookies });
   if (src == "") src = "placeholder.jpg";
@@ -33,6 +35,7 @@ export default function MarkdownImage({
           fill
           style={{ objectFit: contain ? "contain" : "cover" }}
           quality={quality}
+          priority={priority}
         />
       </div>
       <br /> {/* The extra line is to avoid overflow */}
