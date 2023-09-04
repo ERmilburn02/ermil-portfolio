@@ -10,6 +10,7 @@ import MarkdownYouTube, {
   MarkdownYouTubeProps,
 } from "./markdown/MarkdownYouTube";
 import MarkdownItchio, { MarkdownItchioProps } from "./markdown/MarkdownItchio";
+import MarkdownCode, { MarkdownCodeProps } from "./markdown/MarkdownCode";
 
 export default async function RemoteMarkdownComponent({ md }: { md: string }) {
   const components: React.ComponentProps<typeof MDXProvider>["components"] = {
@@ -18,6 +19,7 @@ export default async function RemoteMarkdownComponent({ md }: { md: string }) {
     Iframe: (props: MarkdownIframeProps) => <MarkdownIframe {...props} />,
     YouTube: (props: MarkdownYouTubeProps) => <MarkdownYouTube {...props} />,
     Itchio: (props: MarkdownItchioProps) => <MarkdownItchio {...props} />,
+    Code: (props: MarkdownCodeProps) => <MarkdownCode {...props} />,
   };
 
   return (

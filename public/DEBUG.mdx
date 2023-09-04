@@ -11,7 +11,45 @@ One thing I did as part of this project, was creating my own models. I did have 
 
 One issue I did have with the cars, was flipped normals, although it was pretty simple to fix.
 
-{/* TODO: Talk about code */}
+TODO: Talk about code
+
+<Code language="csharp">
+{`using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof(MeshRenderer))]
+public class CarCustomiser : MonoBehaviour
+{
+    // Singleton
+    private static CarCustomiser m_Instance;
+    public static CarCustomiser Instance
+    {
+        get => m_Instance;
+        private set => m_Instance = value;
+    }
+
+    [SerializeField] private int m_BaseColorIndex = 0;
+
+    private MeshRenderer m_Renderer;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        m_Renderer = GetComponent<MeshRenderer>();
+    }
+
+    public void SetCarColor(Vector3 newColor)
+    {
+        m_Renderer.materials[m_BaseColorIndex].color = new Color(newColor.x, newColor.y, newColor.z);
+    }
+}`}
+
+</Code>
 
 One of the requirements of the project was to provide a video explaining how I created everything, so that's what I did, and the it's below.
 
