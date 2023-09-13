@@ -1,60 +1,37 @@
-# Car Customiser
+# Gliding Bird
 
-<Image src="car-customiser/CarRender.png" priority />
+<Image src="gliding-bird/thumbnail.png" priority quality={100} />
 
-As part of a game development bootcamp, I was required to create a simple product configurator for new car models. I decided to use the Unity Engine, as I'm confident with it, which was important as I had to get the project done in a short stretch of time.
+I like participating in Game Jams, and I like Linux, so when the Linux Game Jam 2022 came around, I wanted to participate. However, due to other commitments, I had a very limited amount of time to work on the project, so I knew I had to do something simple.
 
-One thing I did as part of this project, was creating my own models. I did have to follow a tutorial, but I was proud of the low-poly cars I created.
+I decided to try and remake Flappy Bird, the old mobile game that the world became addicted to for a while. Unfortunately, things didn't go as planned...
 
-<Image src="car-customiser/CarRender.png" contain />
-<Image src="car-customiser/CarSmallRender.png" contain />
+One thing that I did to challenge myself was to not use an existing game engine, and instead build the game from scratch. As part of this, I had to implement collision, which I did using `AABB`, or `Axis-Aligned Bounding Box`. My implementation was simple, but it worked.
 
-One issue I did have with the cars, was flipped normals, although it was pretty simple to fix.
-
-TODO: Talk about code
-
-<Code language="csharp">
-{`using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[RequireComponent(typeof(MeshRenderer))]
-public class CarCustomiser : MonoBehaviour
+<Code language="cpp">
+{`namespace FB
 {
-    // Singleton
-    private static CarCustomiser m_Instance;
-    public static CarCustomiser Instance
+    bool checkCollision(int x1, int y1, int h1, int w1, int x2, int y2, int w2, int h2)
     {
-        get => m_Instance;
-        private set => m_Instance = value;
+        if (x1 < x2 + w2 &&
+            x1 + w1 > x2 &&
+            y1 < y2 + h2 &&
+            y1 + h1 > y2)
+            return true;
+
+        return false;
     }
 
-    [SerializeField] private int m_BaseColorIndex = 0;
-
-    private MeshRenderer m_Renderer;
-
-    private void Awake()
+    bool checkPipeCollision(int birdX, int birdY, int pipeX, int pipeGap, int windowHeight)
     {
-        Instance = this;
+        return checkCollision(birdX, birdY, 16, 16, pipeX, 0, 32, pipeGap - 48) ||
+               checkCollision(birdX, birdY, 16, 16, pipeX, pipeGap + 48, 32, windowHeight);
     }
-
-    private void Start()
-    {
-        m_Renderer = GetComponent<MeshRenderer>();
-    }
-
-    public void SetCarColor(Vector3 newColor)
-    {
-        m_Renderer.materials[m_BaseColorIndex].color = new Color(newColor.x, newColor.y, newColor.z);
-    }
-}`}
-
+} // namespace FB`}
 </Code>
 
-One of the requirements of the project was to provide a video explaining how I created everything, so that's what I did, and the it's below.
+One issue that I didn't really notice, was that I hadn't done the gravity calculations correctly, which has resulted in the bird not falling, but instead gliding. This is why I later changed the name to Gliding Bird, although most places still refer to the game's original name.
 
-<YouTube videoID="xrqUgENtv48" allowFullScreen />
+Overall, it was a fun experience, and it taught me how valuable time management can be during a jam. If you want to check out the game, it's linked down below.
 
-If you want to check out the project, the Itch embed is below, where you can also download the source code.
-
-<Itchio projectID="1742748" />
+<Itchio projectID="1499797" />
