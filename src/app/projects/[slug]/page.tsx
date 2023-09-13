@@ -39,6 +39,7 @@ export async function generateMetadata({
         title: data.post_title,
         description: desc,
         images: [imageUrl],
+        card: "summary_large_image",
       },
       description: desc,
       // TODO: add description,
