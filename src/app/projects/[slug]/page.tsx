@@ -2,6 +2,55 @@ import RemoteMarkdownComponent from "@/components/RemoteMarkdown";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import type { Database } from "@/types";
 import { cookies } from "next/headers";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const supabase = createServerComponentClient<Database>({ cookies });
+
+  const { data, error } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("id", params.slug)
+    .single();
+
+  if (error) {
+    return {
+      title: "Invalid project",
+      description: "That project ID is invalid",
+      authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
+    };
+  } else if (data) {
+    const imageUrl = supabase.storage
+      .from("portfolio-public-data")
+      .getPublicUrl(`images/${data.post_image_link}`).data.publicUrl;
+
+    const desc = "A project by ERmilburn02"; // temp
+
+    return {
+      title: data.post_title,
+      openGraph: {
+        images: [imageUrl],
+      },
+      twitter: {
+        title: data.post_title,
+        description: desc,
+        images: [imageUrl],
+      },
+      description: desc,
+      // TODO: add description,
+      authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
+    };
+  }
+
+  return {
+    title: "Something went wrong",
+    authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
+  };
+}
 
 export default async function IndividualProjectPage({
   params,
