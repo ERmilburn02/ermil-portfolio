@@ -28,7 +28,7 @@ export default function MarkdownImage({
 
   return (
     <>
-      <div className="relative w-full h-48 md:h-96">
+      <div className="relative w-11/12 md:w-[48rem] h-48 md:h-96 mx-auto">
         <Image
           alt=""
           src={imageUrl}

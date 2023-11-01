@@ -16,6 +16,7 @@ export default function MarkdownItchio({ projectID }: MarkdownItchioProps) {
         src={pageURL}
         style={{
           width: "83.333333%",
+          maxWidth: "35.5rem",
           maxHeight: "177px", // Only for this specific iframe, since it never goes taller than this
           marginLeft: "auto",
           marginRight: "auto",
