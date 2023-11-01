@@ -10,7 +10,7 @@ config.autoAddCss = false;
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 // Font
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "ERmilburn02",
   description: "Personal website of ERmilburn02",
   authors: { name: "ERmilburn02", url: "https://www.ermilburn02.com" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "rgb(55 65 81)",
 };
 
 export const dynamic = "force-dynamic";
